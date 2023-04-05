@@ -1,7 +1,6 @@
 var sqlite3 = require('sqlite3').verbose()
 
 const DBSOURCE = "/root/db/test.db"
-// const DBSOURCE = "../db/test.db"
 
 let db = new sqlite3.Database(DBSOURCE, (err) => {
     if (err) {

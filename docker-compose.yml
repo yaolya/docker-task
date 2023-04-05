@@ -9,6 +9,8 @@ services:
       - ./db:/root/db/
   app:
     build: app
+    ports:
+      - "8000:8000"
     volumes:
       - ./db:/root/db/
     depends_on:
